@@ -6,7 +6,7 @@ set -e
 
 CMAKE_INSTALL_PREFIX=$1
 
-svn checkout --trust-server-cert https://projects.coin-or.org/svn/Ipopt/stable/3.12 .
+svn checkout --non-interactive --trust-server-cert https://projects.coin-or.org/svn/Ipopt/stable/3.12 .
 
 ORIG_PWD=$PWD
 for i in ThirdParty/*; do
